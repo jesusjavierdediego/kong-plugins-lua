@@ -25,7 +25,7 @@ local function iter(config_array)
 end
 
 function _M.add(conf, headers)
-  for _, header_name in iter(conf.remove) do
+  for _, header_name in iter(conf.add) do
     kong.response.add_header(header_name, "sample value")
   end
 end

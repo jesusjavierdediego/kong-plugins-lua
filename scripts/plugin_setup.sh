@@ -7,5 +7,7 @@ echo "Starting to Install custom plugins"
 
 cd /usr/local/custom/kong/plugins/hide-token
 luarocks make
+cd /usr/local/custom/kong/plugins/include-header
+luarocks make
 
 echo "Done Installing custom plugins"

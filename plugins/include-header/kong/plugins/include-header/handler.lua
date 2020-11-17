@@ -1,6 +1,6 @@
 local kong = kong
 -- Import our class for removing sensitive headers
-local ih = require "kong.plugins.hide-token.header_filter"
+local ih = require "kong.plugins.include-header.header_filter"
 
 -- Import the base kong plugin
 local BasePlugin = require "kong.plugins.base_plugin"
